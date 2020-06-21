@@ -2,5 +2,163 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "truequelibre-ui": {
+      "projectType": "library",
+      "root": "projects/truequelibre-ui",
+      "sourceRoot": "projects/truequelibre-ui/src",
+      "prefix": "truequelibre",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/truequelibre-ui/tsconfig.lib.json",
+            "project": "projects/truequelibre-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/truequelibre-ui/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/truequelibre-ui/src/test.ts",
+            "tsConfig": "projects/truequelibre-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/truequelibre-ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/truequelibre-ui/tsconfig.lib.json",
+              "projects/truequelibre-ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "visual-inspector": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/visual-inspector",
+      "sourceRoot": "projects/visual-inspector/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/visual-inspector",
+            "index": "projects/visual-inspector/src/index.html",
+            "main": "projects/visual-inspector/src/main.ts",
+            "polyfills": "projects/visual-inspector/src/polyfills.ts",
+            "tsConfig": "projects/visual-inspector/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/visual-inspector/src/favicon.ico",
+              "projects/visual-inspector/src/assets"
+            ],
+            "styles": [
+              "projects/visual-inspector/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/visual-inspector/src/environments/environment.ts",
+                  "with": "projects/visual-inspector/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "visual-inspector:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "visual-inspector:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "visual-inspector:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/visual-inspector/src/test.ts",
+            "polyfills": "projects/visual-inspector/src/polyfills.ts",
+            "tsConfig": "projects/visual-inspector/tsconfig.spec.json",
+            "karmaConfig": "projects/visual-inspector/karma.conf.js",
+            "assets": [
+              "projects/visual-inspector/src/favicon.ico",
+              "projects/visual-inspector/src/assets"
+            ],
+            "styles": [
+              "projects/visual-inspector/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/visual-inspector/tsconfig.app.json",
+              "projects/visual-inspector/tsconfig.spec.json",
+              "projects/visual-inspector/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/visual-inspector/e2e/protractor.conf.js",
+            "devServerTarget": "visual-inspector:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "visual-inspector:serve:production"
+            }
+          }
+        }
+      }
+    }},
+  "defaultProject": "truequelibre-ui"
 }
