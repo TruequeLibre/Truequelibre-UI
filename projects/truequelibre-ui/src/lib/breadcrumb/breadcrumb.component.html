@@ -1,0 +1,8 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Search Results</a></li>
+    <li class="breadcrumb-item" *ngFor="let category of categories">
+      <a [routerLink]="category.categoryUrl">{{category.categoryName}}</a>
+    </li>
+  </ol>
+</nav>

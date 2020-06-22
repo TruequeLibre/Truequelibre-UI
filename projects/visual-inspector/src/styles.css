@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Proxima nova';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/proxima.nova/regular-black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/proxima.nova/regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima nova';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/proxima.nova/regular-thin.otf") format("opentype");
+}

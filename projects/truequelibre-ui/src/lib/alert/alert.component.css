@@ -5,6 +5,10 @@
   --danger: #e6540b;
 }
 
+.alert {
+  font-family: 'Proxima nova', 'Roboto', sans-serif;
+}
+
 .alert-primary {
   background: var(--primary);
   color: white;
