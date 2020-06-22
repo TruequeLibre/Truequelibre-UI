@@ -1,0 +1,76 @@
+:root{
+  --primary: #3483fa;
+  --success: #00a650;
+  --warning: #ffea78;
+  --danger: #e6540b;
+}
+
+.btn {
+  font-family: 'Proxima nova', 'Roboto', sans-serif;
+  background: none;
+  color: inherit;
+}
+
+/* ==== Solid Colors ====*/
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+
+.btn-warning {
+  background: var(--warning);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+/* ==== Outline Colors ====*/
+
+.btn-outline-primary {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-success {
+  background: none;
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.btn-outline-warning {
+  background: none;
+  border: 1px solid var(--warning);
+  color: var(--warning);
+}
+
+.btn-outline-danger {
+  background: none;
+  border: 1px solid var(--danger);
+  color: var(--danger);;
+}
+
+/* ==== Sizes ====*/
+
+.btn-sm {
+  font-size: 13px;
+}
+
+.btn-md {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.btn-lg {
+  font-size: 18px;
+  padding: 12px 24px;
+}

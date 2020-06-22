@@ -3,13 +3,15 @@ import {AlertComponent} from './alert/alert.component';
 import {CommonModule} from '@angular/common';
 import {BreadcrumbComponent} from './breadcrumb/breadcrumb.component';
 import {RouterTestingModule} from '@angular/router/testing';
+import {LinkButtonComponent} from './link.button/link.button.component';
 
 
 
 @NgModule({
   declarations: [
     AlertComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    LinkButtonComponent
   ],
     imports: [
         CommonModule,
@@ -17,7 +19,8 @@ import {RouterTestingModule} from '@angular/router/testing';
     ],
   exports: [
     AlertComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    LinkButtonComponent
   ]
 })
 export class TruequelibreUiModule { }
