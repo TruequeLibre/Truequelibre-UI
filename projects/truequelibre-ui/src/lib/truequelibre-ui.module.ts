@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { TruequelibreUiComponent } from './truequelibre-ui.component';
+import {AlertComponent} from './alert/alert.component';
+import {CommonModule} from '@angular/common';
 
 
 
 @NgModule({
-  declarations: [TruequelibreUiComponent],
+  declarations: [AlertComponent],
   imports: [
+    CommonModule
   ],
-  exports: [TruequelibreUiComponent]
+  exports: [AlertComponent]
 })
 export class TruequelibreUiModule { }

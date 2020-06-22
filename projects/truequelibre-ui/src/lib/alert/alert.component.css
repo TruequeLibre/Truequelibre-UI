@@ -1,0 +1,32 @@
+:root{
+  --primary: #3483fa;
+  --success: #00a650;
+  --warning: #ffea78;
+  --danger: #e6540b;
+}
+
+.alert-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.alert-secondary {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.alert-success {
+  background: var(--success);
+  color: white;
+}
+
+.alert-warning {
+  background: var(--warning);
+  color: white;
+}
+
+.alert-danger {
+  background: var(--danger);
+  color: white;
+}

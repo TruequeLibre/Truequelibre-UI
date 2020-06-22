@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build-library": "cd ./projects/truequelibre-ui && ng build",
     "package-library": "cd ./dist/truequelibre-ui && npm pack",
-    "distribute-library": "npm script-run build-library && npm script-run package-library"
+    "distribute-library": "npm run-script build-library && npm run-script package-library"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,9 @@
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
+    "bootstrap": "^4.5.0",
     "rxjs": "~6.5.4",
+    "truequelibre-ui": "file:dist/truequelibre-ui/truequelibre-ui-0.0.1.tgz",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
