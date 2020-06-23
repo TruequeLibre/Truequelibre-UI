@@ -42,3 +42,8 @@ body {
 * > truequelibre-product-page-card:first-child > .card {
   margin-left: 0 !important;
 }
+
+truequelibre-main-carousel:parent {
+  padding: 0 !important;
+  margin: 0 !important;
+}
