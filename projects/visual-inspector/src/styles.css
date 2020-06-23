@@ -2,8 +2,15 @@
 @font-face {
   font-family: 'Proxima nova';
   font-style: normal;
+  font-weight: 700;
+  src: url("/assets/proxima.nova/regular-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima nova';
+  font-style: normal;
   font-weight: 600;
-  src: url("/assets/proxima.nova/regular-black.otf") format("opentype");
+  src: url("/assets/proxima.nova/regular-semibold.otf") format("opentype");
 }
 
 @font-face {
@@ -18,4 +25,16 @@
   font-style: normal;
   font-weight: 300;
   src: url("/assets/proxima.nova/regular-thin.otf") format("opentype");
+}
+
+body {
+  background: #e7e7e7 !important;
+}
+
+* > truequelibre-item-card:first-child > .card {
+  margin-left: 0 !important;
+}
+
+* > truequelibre-client-card:first-child > .card {
+  margin-left: 0 !important;
 }

@@ -1,0 +1,11 @@
+<a [routerLink]="storeURL" class="card" style="width: 18rem;">
+  <img [src]="bannerPicture" class="card-img-top" [alt]="clientName">
+  <div class="card-body">
+    <img class="card-img-client" [src]="clientPicture" [alt]="clientName">
+    <h4 class="card-title">{{clientName}}</h4>
+    <div class="card-product-container">
+      <img class="card-img-product" [src]="item.picture" [alt]="clientName" *ngFor="let item of products">
+    </div>
+    <a class="visit-store-link" href="#">Visit Store</a>
+  </div>
+</a>

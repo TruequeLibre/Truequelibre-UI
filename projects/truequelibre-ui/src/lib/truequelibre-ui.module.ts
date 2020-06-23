@@ -5,6 +5,7 @@ import {BreadcrumbComponent} from './breadcrumb/breadcrumb.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {LinkButtonComponent} from './link.button/link.button.component';
 import {ItemCardComponent} from './item.card/item.card.component';
+import {ClientCardComponent} from './client.card/client.card.component';
 
 
 
@@ -13,7 +14,8 @@ import {ItemCardComponent} from './item.card/item.card.component';
     AlertComponent,
     BreadcrumbComponent,
     LinkButtonComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    ClientCardComponent
   ],
     imports: [
         CommonModule,
@@ -23,7 +25,8 @@ import {ItemCardComponent} from './item.card/item.card.component';
     AlertComponent,
     BreadcrumbComponent,
     LinkButtonComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    ClientCardComponent
   ]
 })
 export class TruequelibreUiModule { }
