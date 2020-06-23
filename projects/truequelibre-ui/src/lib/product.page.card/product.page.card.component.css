@@ -1,0 +1,47 @@
+a, h4, p, span {
+  font-family: 'Proxima nova', 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: #333;
+}
+
+.card {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  margin-left: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 7px 8px 0 rgba(0,0,0,.2), 0 1px 3px 0 rgba(0,0,0,.1);
+  border: none;
+}
+
+.card > .card-body > p {
+  height: 30px;
+  font-size: 13.5px;
+  color: #909090;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 0.4rem;
+}
+
+.card > .card-body > p:nth-child(2) {
+  margin-bottom: -10px;
+}
+
+.card > .card-body > p:nth-child(3) {
+  color: #00a650;
+  margin-bottom: -4px;
+}
+
+img {
+  border-bottom: 1px solid #9090902b;
+}
+
+

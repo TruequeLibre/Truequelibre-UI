@@ -1,6 +1,6 @@
 <a [routerLink]="URL" class="card" style="width: 224px;">
   <img [src]="picture" class="card-img-top" [alt]="title">
-  <div class="free-shipping-badge">
+  <div [class]="'free-shipping-badge ' + (freeShipping ? '' : 'hide-free-shipping')">
     <div></div>
   </div>
   <div class="card-body">

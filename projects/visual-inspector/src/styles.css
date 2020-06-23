@@ -38,3 +38,7 @@ body {
 * > truequelibre-client-card:first-child > .card {
   margin-left: 0 !important;
 }
+
+* > truequelibre-product-page-card:first-child > .card {
+  margin-left: 0 !important;
+}

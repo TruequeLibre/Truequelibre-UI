@@ -6,6 +6,7 @@ import {RouterTestingModule} from '@angular/router/testing';
 import {LinkButtonComponent} from './link.button/link.button.component';
 import {ItemCardComponent} from './item.card/item.card.component';
 import {ClientCardComponent} from './client.card/client.card.component';
+import {ProductPageCardComponent} from "./product.page.card/product.page.card.component";
 
 
 
@@ -15,7 +16,8 @@ import {ClientCardComponent} from './client.card/client.card.component';
     BreadcrumbComponent,
     LinkButtonComponent,
     ItemCardComponent,
-    ClientCardComponent
+    ClientCardComponent,
+    ProductPageCardComponent
   ],
     imports: [
         CommonModule,
@@ -26,7 +28,8 @@ import {ClientCardComponent} from './client.card/client.card.component';
     BreadcrumbComponent,
     LinkButtonComponent,
     ItemCardComponent,
-    ClientCardComponent
+    ClientCardComponent,
+    ProductPageCardComponent
   ]
 })
 export class TruequelibreUiModule { }

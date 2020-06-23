@@ -1,0 +1,11 @@
+<a [routerLink]="URL" class="card" [style]="{width: small ? '200px': '224px'}">
+  <img [src]="picture" class="card-img-top" [alt]="title">
+  <div class="card-body">
+    <h4 class="card-title">{{price}}</h4>
+    <p class="card-text">{{payments}}</p>
+    <p class="card-text" *ngIf="freeShipping">
+      Free shipping
+    </p>
+    <p>{{title}}</p>
+  </div>
+</a>
