@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {BreadcrumbComponent} from './breadcrumb/breadcrumb.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {LinkButtonComponent} from './link.button/link.button.component';
+import {ItemCardComponent} from './item.card/item.card.component';
 
 
 
@@ -11,7 +12,8 @@ import {LinkButtonComponent} from './link.button/link.button.component';
   declarations: [
     AlertComponent,
     BreadcrumbComponent,
-    LinkButtonComponent
+    LinkButtonComponent,
+    ItemCardComponent
   ],
     imports: [
         CommonModule,
@@ -20,7 +22,8 @@ import {LinkButtonComponent} from './link.button/link.button.component';
   exports: [
     AlertComponent,
     BreadcrumbComponent,
-    LinkButtonComponent
+    LinkButtonComponent,
+    ItemCardComponent
   ]
 })
 export class TruequelibreUiModule { }
