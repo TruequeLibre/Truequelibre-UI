@@ -12,6 +12,7 @@
       "element",
       "truequelibre",
       "kebab-case"
-    ]
+    ],
+    "no-trailing-whitespace": false
   }
 }

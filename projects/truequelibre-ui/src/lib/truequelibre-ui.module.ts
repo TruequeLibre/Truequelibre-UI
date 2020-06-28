@@ -8,6 +8,7 @@ import {ItemCardComponent} from './item.card/item.card.component';
 import {ClientCardComponent} from './client.card/client.card.component';
 import {ProductPageCardComponent} from './product.page.card/product.page.card.component';
 import {MainCarouselComponent} from './main.carousel/main.carousel.component';
+import {ProductCarouselComponent} from './product.carousel/product.carousel.component';
 
 
 
@@ -19,7 +20,8 @@ import {MainCarouselComponent} from './main.carousel/main.carousel.component';
     ItemCardComponent,
     ClientCardComponent,
     ProductPageCardComponent,
-    MainCarouselComponent
+    MainCarouselComponent,
+    ProductCarouselComponent
   ],
     imports: [
         CommonModule,
@@ -32,7 +34,8 @@ import {MainCarouselComponent} from './main.carousel/main.carousel.component';
     ItemCardComponent,
     ClientCardComponent,
     ProductPageCardComponent,
-    MainCarouselComponent
+    MainCarouselComponent,
+    ProductCarouselComponent
   ]
 })
 export class TruequelibreUiModule { }

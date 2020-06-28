@@ -12,5 +12,4 @@ export class ProductPageCardComponent {
   @Input() title        = 'Please insert a description no longer than 70 chars';
   @Input() URL          = '';
   @Input() freeShipping = true;
-  @Input() small = true;
 }

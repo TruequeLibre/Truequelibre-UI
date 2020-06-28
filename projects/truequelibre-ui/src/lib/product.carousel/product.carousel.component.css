@@ -1,0 +1,46 @@
+.col-1 {
+  padding: 0;
+}
+
+.col-11 img {
+  padding: 10px 50px;
+}
+
+.carousel-indicators {
+  top: 0;
+  bottom: unset;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 78px
+}
+
+.carousel-indicators li {
+  padding: 0;
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: #fff;
+}
+
+.carousel-indicators li.active {
+
+}
+
+li img {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  border-left: 4px solid transparent;
+}
+
+li.active img {
+  border-left: 4px solid #007bff;
+}
+
+#carouselExampleCaptions .carousel-item {
+  background: #fff;
+  max-height: 450px;
+}
